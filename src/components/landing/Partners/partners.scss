@@ -1,0 +1,30 @@
+.partners{
+    padding: 50px 0;
+    background-color: #080808;
+    .main-heading{
+        margin-bottom: 45px;
+        h6{
+            color: #FFF;
+            text-align: center;
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+    .parent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+}
+
+@media (max-width:600px){
+    .partners .main-heading h6{
+        font-size: 32px;
+    }
+    .partners .parent{
+        flex-direction: column;
+    }
+}

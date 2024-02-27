@@ -1,0 +1,111 @@
+.faqs-section{
+    padding-top: 70px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 99;
+    .faqs-top-left{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        pointer-events: none;
+    }
+    .faqs-bottom-right{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        pointer-events: none;
+    }
+    .main-heading{
+        margin-bottom: 60px;
+        h6{
+            color: #FFF;
+            text-align: center;
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        p{
+            color: #FFF;
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; 
+        }
+    }
+    .bottom-content{
+        max-width: 888px;
+        width: 100%;
+        margin: 0 auto;
+        .accordion{
+            .accordion-item{
+                border-radius: 15px;
+                border: 1px solid #0F0F0F;
+                background: #000;
+                backdrop-filter: blur(5px);
+                margin-bottom: 12px;
+            }
+            .accordion-button{
+                border-radius: 15px;
+                border: 1px solid #0F0F0F;
+                background: #000;
+                backdrop-filter: blur(5px);
+                box-shadow: none;
+                padding: 25px 30px;
+                &::after{
+                    background: url("../../../assets/plus-icon.svg");
+                }
+                .twice-text{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 15px;
+                    p{
+                        color: #61D290;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 120%;
+                    }
+                    h6{
+                        color: #FFF;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 120%; 
+                    }
+                }
+            }
+            .accordion-button:not(.collapsed)::after{
+                background: url("../../../assets/minus-icon.svg");
+            }
+            .accordion-body{
+                padding: 25px 30px;
+                color: rgba(255, 255, 255, 0.60);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%; 
+            }
+        }
+    }
+}
+
+
+@media (max-width:1024px){
+    .faqs-section .main-heading h6{
+        font-size: 32px;
+    }
+    .faqs-section .main-heading p{
+        font-size: 16px;
+    }
+    .faqs-section .bottom-content .accordion .accordion-button .twice-text h6{
+        font-size: 14px;
+    }
+    .faqs-section .bottom-content .accordion .accordion-button{
+        padding: 25px 15px;
+    }
+}

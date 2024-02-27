@@ -1,0 +1,95 @@
+.fourth-section {
+    background: #61D290;
+    height: 364px;
+    padding-top: 60px;
+
+    .main-heading {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+
+        h6 {
+            color: #002B12;
+            text-align: center;
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;
+        }
+    }
+
+    .bottom-content {
+        margin-top: 60px;
+        .parent-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            height: 263px;
+            overflow: hidden;
+
+            .single-card {
+                position: relative;
+                z-index: 9;
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+                background: #050505;
+                backdrop-filter: blur(77px);
+                padding: 120px 40px 50px 40px;
+                overflow: hidden;
+
+                .bg-card-img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                h6{
+                    color: #FFF;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    text-transform: capitalize;
+                    margin-bottom: 5px;
+                }
+                p{
+                    color: #FFF;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 140%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .fourth-section{
+        height: 780px !important;
+    }
+}
+
+@media (max-width:1024px){
+    .fourth-section{
+        height: 920px;
+    }
+    .fourth-section .main-heading h6{
+        font-size: 32px;
+    }
+    .fourth-section .bottom-content .parent-cards{
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+}
+
+@media (max-width:600px){
+    .fourth-section{
+        height: 920px !important;
+    }
+    
+}

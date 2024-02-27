@@ -1,0 +1,105 @@
+.main-footer{
+    padding: 50px 0;
+    position: relative;
+    z-index: 99;
+    .lastone-bg{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        pointer-events: none;
+        z-index: -1;
+        object-fit: cover;
+    }
+    .parent{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left-side{
+            .logo{
+                margin-bottom: 22px;
+            }
+            p{
+                color: #FFF;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%; 
+                max-width: 305px;
+                width: 100%;
+                margin-bottom: 40px;
+            }
+            .last-para{
+                h6{
+                    color: rgba(255, 255, 255, 0.70);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 140%; 
+                    a{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .right-side{
+            max-width: 411px;
+            width: 100%;
+            .inner-div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+                padding: 15px 0;
+               
+                .social{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    h6{
+                        color: #FFF;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 140%;
+                    }
+                }
+                a{
+                    color: rgba(255, 255, 255, 0.70);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 140%; 
+                }
+            }
+            .last-para-mobile{
+                margin-top: 50px;
+                h6{
+                    color: rgba(255, 255, 255, 0.70);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 140%; 
+                    a{
+                        color: #fff;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@media (max-width:600px){
+    .main-footer .parent{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .main-footer .parent .last-para{
+        display: none;
+    }
+    .main-footer .last-para-mobile{
+        display: block !important;
+    }
+}
